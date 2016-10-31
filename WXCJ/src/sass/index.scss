@@ -1,0 +1,266 @@
+
+
+/*@function  px2Rem($px){
+  @return  $px/$fontSize +rem;
+}*/
+
+*{
+  padding: 0;
+  margin: 0;
+}
+@mixin PosL($w,$h,$t,$l,$pos){
+  height:$h;
+  width:$w;
+  top:$t;
+  left: $l;
+  position: $pos;
+}
+@mixin PosR($w,$h,$t,$r,$pos){
+  height:$h;
+  width:$w;
+  top:$t;
+  right: $r;
+  position: $pos;
+}
+
+@mixin WH($w,$h){
+  width:$w;
+  height:$h;
+}
+
+%webpage {
+  width: 100%;
+  height: 100%;
+}
+%webimg{
+  width: 100%;
+  height:100%;
+}
+%webfont{
+  color: #fff;
+  border-width: 0;
+  border-color: transparent;
+  font-size: 0.30rem;
+  opacity: 1;
+  font-family: 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+}
+
+@mixin Pagestyle($ulT,$pos,$pdr,$pdl){
+  ul{
+    padding-top:$ulT;
+    li{
+      p{
+        color: #fff;
+        border-width: 0;
+        border-color: transparent;
+        font-size: 0.28rem;
+        opacity: 1;
+        text-align: $pos;
+        font-family: 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+        padding:1% $pdr 0 $pdl;
+      }
+    }
+  }
+}
+
+html,body {
+  @extend  %webpage;
+  text-align: center;
+
+}
+
+.box{
+  margin: 0 auto;
+  max-width: 640px;
+  background: rgba(0,0,0,0.5);
+  @extend  %webpage;
+  overflow: hidden;
+  position: relative;
+}
+
+/*load*/
+.load{
+  @extend %webpage;
+  z-index: 5;
+  background: #000;
+  text-align: center;
+  position: absolute;
+  img{
+    position: absolute;
+    width:80%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+  }
+}/*load over*/
+
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#audio_btn{
+  @include  PosR(0.6rem,0.6rem,0.6rem,0.6rem,absolute);
+  animation:rotating 1.2s linear infinite;
+  z-index: 3;
+  cursor: pointer;
+  background: url("../../images/music1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  audio{
+    z-index: -2;
+  }
+}
+#audio_btn.off{
+  animation-play-state:paused;
+}
+#audio_btn.rotate{
+  animation-play-state:running;
+}
+
+.swiper-slide ul{
+  position: absolute;
+  top:0;left:0;
+  background-image: url("../../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  @extend  %webpage;
+  li{
+    width:100%;
+    z-index: 2;
+    padding:1.8% 0;
+  }
+}
+
+.ani{
+  animation-timing-function:ease;
+}
+
+.swiper-container{
+  @extend  .box;
+  .bg{
+    @extend  %webpage;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-origin: content-box;
+  }
+
+  #page-1{
+    .bg{
+      background-image: url("../../images/img01.jpg");
+    }
+    ul {
+      background-image: none;
+      padding:0;
+      li:nth-child(1) {
+        top: 1.32rem;
+        left: 0;
+        position: absolute;
+        img {
+          @include WH(4.62rem, 1.42rem);
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      li:nth-child(2) {
+        top: 2.28rem;
+        left: 0;
+        position: absolute;
+        span {
+          @extend %webfont;
+          display: block;
+          text-align: right;
+          padding: 5%;
+        }
+
+      }
+      li:nth-child(3){
+        @include PosR(2.7rem,1.68rem,75%,2%,absolute);
+        img{
+          @extend %webimg;
+        }
+      }
+    }
+  }
+
+  #page-2{
+    .bg{
+      background-image: url("../../images/img02.jpg");
+    }
+    @include Pagestyle(15%,center,0,0);
+  }
+  #page-3{
+    .bg{
+      background-image: url("../../images/img03.jpg");
+    }
+    @include Pagestyle(18%,center,0,0);
+  }
+  #page-4{
+    .bg{
+      background-image: url("../../images/img04.jpg");
+    }
+    @include Pagestyle(25%,left,0,8%);
+  }
+  #page-5{
+    .bg{
+      background-image: url("../../images/img05.jpg");
+    }
+    @include Pagestyle(22%,center,0,0);
+  }
+  #page-6{
+    .bg{
+      background-image: url("../../images/img06.jpg");
+    }
+    @include Pagestyle(17%,left,0,5%);
+  }
+  #page-7{
+    .bg{
+      background-image: url("../../images/img07.jpg");
+    }
+    @include Pagestyle(22%,center,0,0);
+  }
+  #page-8{
+    .bg{
+      background-image: url("../../images/img08.jpg");
+    }
+    @include Pagestyle(14%,center,0,0);
+  }
+  #page-9{
+    .bg{
+      background-image: url("../../images/pepsi.jpg");
+    }
+    @include Pagestyle(0,center,0,0);
+    ul li{
+      @include PosR(100%,auto,80%,0,absolute);
+      p{
+        font-size: 0.3rem;
+      }
+    }
+  }
+}
+@keyframes start {
+  0%, 30% {
+    opacity: 0;
+    transform: translate(0,10px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0,-8px);
+  }
+}
+.arrow{
+  background: url("../../images/arrow.png") no-repeat 100% 100%;
+  @include PosL(24px,18px,93%,50%,absolute);
+  margin-left: -12px;
+  z-index:5;
+  animation: start 1.5s infinite ease-in-out; ;
+}

@@ -1,0 +1,776 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+html, body, .swiper-container, .swiper-slide, .box-1 p:nth-of-type(1) {
+  width: 100%;
+  height: 100%; }
+
+.box-1 .tran img, .box-1 .pic1 img, .box-2 .bj22 img, .box-2 .pic22 img, .box-2 .bj24 img, .box-3 .bj34 img, .box-3 .bj35 img, .box-3 .bj36 img, .box-3 .bj37 img, .box-3 .bj38 img, .box-3 .bj39 img, .box-3 .bj310 img, .box-3 .cont31 img, .box-3 .cont32 img, .box-4 .pic31 img, .box-4 .pic32 img, .box-4 .pic img, .box-4 .pic33 img, .box-4 .pic34 img, .box-4 .pic35 img, .box-5 .pic41 img, .box-5 .pic42 img, .box-5 .pic43 img, .box-5 .pic44 img, .box-5 .pic45 img, .box-5 .pic46 img, .box-5 .pic47 img, .box-5 .bj41 img, .box-6 .pic51 img, .box-6 .pic52 img, .box-6 .pic53 img, .box-6 .pic54 img, .box-6 .pic55 img, .box-6 .pic56 img, .box-6 .pic57 img, .box-6 .pic58 img, .box-7 .pic61 img, .box-7 .bj1 img, .box-7 .bj3 img, .box-7 .bj2 img, .box-7 .bj9 img, .box-7 .pic62 img, .box-7 .pic63 img, .box-8 .bj img, .box-8 .bj1 img, .box-8 .pic71 img, .box-8 .pic72 img, .box-8 .pic74 img, .box-8 .pic73 img, .box-8 .pic75 img, .box-9 .pic81 img, .box-9 .pic82 img, .box-9 .pic83 img, .box-9 .pic84 img, .box-9 .pic85 img, .box-9 .bj img, .box-9 .flower img, .box-10 .pic91 img, .box-10 .pic92 img, .box-10 .pic93 img, .box-10 .bj img, .box-10 .pic94 img {
+  width: 100%;
+  height: 100%; }
+
+.box-1 .desc11, .box-1 .desc12, .box-2 .p21, .box-2 .p22, .box-2 .p23, .box-2 .p24, .box-2 .p25, .box-4 .cont, .box-5 .cont41 p, .box-6 .cont p, .box-7 .p1, .box-7 .p2, .box-7 .p3, .box-7 .p4, .box-8 .cont, .box-9 .cont1, .box-9 .cont2, .box-10 .box {
+  color: #000000;
+  border-width: 0;
+  border-color: transparent;
+  font-size: 0.8rem;
+  opacity: 1;
+  font-family: 黑体; }
+
+.swiper-container {
+  margin: 0 auto;
+  max-width: 10rem; }
+
+.load {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  text-align: center; }
+  .load span {
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block; }
+  .load img {
+    vertical-align: middle; }
+
+.swiper-slide {
+  background-size: cover; }
+
+.box-1 {
+  background: url("../images/bj.png"); }
+  .box-1 .tran {
+    height: 52.38095%;
+    width: 93.75%;
+    top: 12.10317%;
+    left: 3.4375%;
+    position: absolute;
+    z-index: 1;
+    animation: rotate2d 10s 0.5s infinite both; }
+  .box-1 .tran2 {
+    z-index: 0;
+    height: "";
+    width: "";
+    top: 14.88095%;
+    left: 7.5%;
+    position: absolute; }
+  .box-1 .desc11, .box-1 .desc12 {
+    height: auto;
+    height: "";
+    width: 26.25%;
+    top: 74.20635%;
+    left: 28.125%;
+    position: absolute;
+    z-index: 0; }
+  .box-1 .desc12 {
+    height: "";
+    width: "";
+    top: 80.75397%;
+    left: 47.1875%;
+    position: absolute; }
+  .box-1 .line11, .box-1 .line12 {
+    height: 0.59524%;
+    width: 45.3125%;
+    top: 77.57937%;
+    left: 55.9375%;
+    position: absolute;
+    z-index: 0;
+    background-color: #000000; }
+  .box-1 .line12 {
+    height: "";
+    width: "";
+    top: 81.54762%;
+    left: 0;
+    position: absolute; }
+@keyframes rotate2d {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+  .box-1 .pic1 {
+    height: 14.8373%;
+    width: 31.5625%;
+    top: 29.80556%;
+    left: 35%;
+    position: absolute;
+    z-index: 0; }
+
+.box-2 {
+  background: url("../images/bj.png"); }
+  .box-2 .bj22 {
+    height: 32.14286%;
+    width: 40.38437%;
+    top: 60.11905%;
+    left: 27.8125%;
+    position: absolute; }
+  .box-2 .p21, .box-2 .p22, .box-2 .p23, .box-2 .p24, .box-2 .p25 {
+    height: auto;
+    height: "";
+    width: 56.25%;
+    top: 6.54762%;
+    left: 25%;
+    position: absolute; }
+  .box-2 .p22 {
+    height: "";
+    width: "";
+    top: 15.07937%;
+    left: 50.3125%;
+    position: absolute; }
+  .box-2 .p23 {
+    height: "";
+    width: "";
+    top: 21.8254%;
+    left: 21.875%;
+    position: absolute; }
+  .box-2 .p24 {
+    height: "";
+    width: "";
+    top: 31.54762%;
+    left: 44.375%;
+    position: absolute; }
+  .box-2 .p25 {
+    height: "";
+    width: "";
+    top: 41.26984%;
+    left: 22.1875%;
+    position: absolute; }
+  .box-2 .pic22 {
+    height: 15.47619%;
+    width: 24.6875%;
+    top: 50.39683%;
+    left: 56.25%;
+    position: absolute;
+    animation: flash 5s 0.5s infinite both; }
+  .box-2 .bj24 {
+    height: 16.25%;
+    width: 108.4375%;
+    top: 91.07143%;
+    left: -4.6875%;
+    position: absolute;
+    z-index: 1; }
+
+.box-3 {
+  background: url("../images/bj.png"); }
+  .box-3 .bj34 {
+    height: 16.25%;
+    width: 108.4375%;
+    top: 91.07143%;
+    left: -4.6875%;
+    position: absolute;
+    z-index: 1; }
+  .box-3 .bj35 {
+    height: 30.36706%;
+    width: 97.1875%;
+    top: 2.77778%;
+    left: 1.25%;
+    position: absolute; }
+  .box-3 .bj36 {
+    height: 34.72222%;
+    width: 21.4125%;
+    top: 3.76984%;
+    left: 15.3125%;
+    position: absolute; }
+  .box-3 .bj37 {
+    height: 14.28571%;
+    width: 112.1875%;
+    top: -0.59524%;
+    left: -5.9375%;
+    position: absolute; }
+  .box-3 .bj38 {
+    height: 21.23016%;
+    width: 26.00625%;
+    top: 67.65873%;
+    left: 30.75312%;
+    position: absolute; }
+  .box-3 .bj39 {
+    height: 10.77579%;
+    width: 31.5625%;
+    top: 61.06548%;
+    left: 51.875%;
+    position: absolute; }
+  .box-3 .bj310, .box-3 .cont31, .box-3 .cont32 {
+    height: 4.97421%;
+    width: 20.3125%;
+    top: 62.49603%;
+    left: 58.74063%;
+    position: absolute; }
+  .box-3 .cont31, .box-3 .cont32 {
+    height: "";
+    width: 99.0625%;
+    top: 43.84921%;
+    left: 18.125%;
+    position: absolute;
+    color: #000000;
+    font-size: 0.8rem;
+    opacity: 1;
+    font-family: 黑体;
+    line-height: 0.9rem; }
+  .box-3 .cont32 {
+    height: "";
+    width: "";
+    top: 52.38095%;
+    left: 24.125%;
+    position: absolute; }
+
+.box-4 {
+  background: url("../images/bj.png"); }
+  .box-4 .pic31 {
+    height: 24.99405%;
+    width: 66.25%;
+    top: 3.93579%;
+    left: 6.67962%;
+    position: absolute; }
+  .box-4 .pic32, .box-4 .pic {
+    height: 38.67857%;
+    width: 68.125%;
+    top: -10.80159%;
+    left: 71.93717%;
+    position: absolute;
+    z-index: 1;
+    animation: rotate2d 10s 0.5s infinite both; }
+  .box-4 .pic {
+    height: "";
+    width: "";
+    top: -9.09908%;
+    left: 69.1278%;
+    position: absolute;
+    z-index: 0; }
+  .box-4 .pic33 {
+    height: 27.64286%;
+    width: 72.1875%;
+    top: 29.53458%;
+    left: 27.60717%;
+    position: absolute; }
+  .box-4 .pic34 {
+    height: 23.61111%;
+    width: 28.4375%;
+    top: 49.86913%;
+    left: -3.75%;
+    position: absolute;
+    transform: rotate(32deg); }
+  .box-4 .pic35 {
+    height: 31.83929%;
+    width: 81.5625%;
+    top: 67.48724%;
+    left: 8.86771%;
+    position: absolute; }
+  .box-4 .line, .box-4 .box-7 .line1, .box-7 .box-4 .line1 {
+    background: #000;
+    height: 0.59524%;
+    width: 38.4375%;
+    top: 63.56548%;
+    left: 62.1875%;
+    position: absolute; }
+  .box-4 .cont {
+    height: auto;
+    height: "";
+    width: 56.25%;
+    top: 58.16305%;
+    left: 26.60874%;
+    position: absolute;
+    font-size: -1.1rem; }
+    .box-4 .cont p {
+      font-size: 0.6rem; }
+@keyframes rotate2d {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.box-5 {
+  background: url("../images/bj.png"); }
+  .box-5 .pic41, .box-5 .pic42, .box-5 .pic43, .box-5 .pic44, .box-5 .pic45, .box-5 .pic46, .box-5 .pic47, .box-5 .bj41 {
+    height: 20.21032%;
+    width: 44.6875%;
+    top: 8.73016%;
+    left: 27.5%;
+    position: absolute; }
+  .box-5 .pic42 {
+    height: "";
+    width: "";
+    top: 31.15079%;
+    left: 4.6875%;
+    position: absolute; }
+  .box-5 .pic43 {
+    height: "";
+    width: "";
+    top: 31.15079%;
+    left: 51.25%;
+    position: absolute; }
+  .box-5 .pic44 {
+    height: 22.02381%;
+    width: 32.08438%;
+    top: 67.06349%;
+    left: 8.4375%;
+    position: absolute; }
+  .box-5 .pic45, .box-5 .pic46, .box-5 .pic47 {
+    height: 4.06548%;
+    width: 8.75%;
+    top: 73.59008%;
+    left: 51.27636%;
+    position: absolute;
+    transform: rotate(74deg);
+    animation: fadeInRight 1s 0.8s infinite both; }
+    .box-5 .pic45 img, .box-5 .pic46 img, .box-5 .pic47 img {
+      transform: rotate(74deg); }
+  .box-5 .pic46 {
+    height: 5.77183%;
+    width: 12.5%;
+    top: 69.625%;
+    left: 67.8125%;
+    position: absolute;
+    animation: fadeInRight 1s 0.5s infinite both; }
+    .box-5 .pic46 img {
+      transform: rotate(0deg); }
+  .box-5 .pic47 {
+    height: 7.11%;
+    width: 15.3%;
+    top: 14.91%;
+    left: 79.98%;
+    position: absolute;
+    animation: fadeInUp 1s 0.5s infinite both; }
+    .box-5 .pic47 img {
+      transform: rotate(316deg); }
+  .box-5 .bj41 {
+    height: 16.53%;
+    width: 110.3%;
+    top: 86.9%;
+    left: -5%;
+    position: absolute; }
+  .box-5 .line41 {
+    background: #000;
+    height: 0.5952%;
+    width: 30.93%;
+    top: 59.325%;
+    left: 68.75%;
+    position: absolute; }
+  .box-5 .cont41 {
+    height: "";
+    width: 56.25%;
+    top: 58.134%;
+    left: 33.75%;
+    position: absolute; }
+    .box-5 .cont41 p {
+      font-size: 0.6rem; }
+
+.box-6 {
+  background: url("../images/bj.png"); }
+  .box-6 .pic51, .box-6 .pic52, .box-6 .pic53, .box-6 .pic54, .box-6 .pic55, .box-6 .pic56, .box-6 .pic57, .box-6 .pic58 {
+    height: 19.41%;
+    width: 42.8125%;
+    top: 4.56%;
+    left: 3.437%;
+    position: absolute; }
+  .box-6 .pic52 {
+    height: "";
+    width: "";
+    top: 4.563%;
+    left: 50.93%;
+    position: absolute; }
+  .box-6 .pic53 {
+    height: "";
+    width: "";
+    top: 25.595%;
+    left: 3.125%;
+    position: absolute; }
+  .box-6 .pic54 {
+    height: "";
+    width: "";
+    top: 25.396%;
+    left: 49.6875%;
+    position: absolute; }
+  .box-6 .pic55 {
+    height: "";
+    width: "";
+    top: 48.61%;
+    left: 3.437%;
+    position: absolute; }
+  .box-6 .pic56 {
+    height: "";
+    width: "";
+    top: 48.412%;
+    left: 50.62%;
+    position: absolute; }
+  .box-6 .pic57 {
+    height: 22.81%;
+    width: 31.6%;
+    top: 70.83%;
+    left: 3.125%;
+    position: absolute; }
+  .box-6 .pic58 {
+    height: 16.53%;
+    width: 110.31%;
+    top: 91.26%;
+    left: -4.375%;
+    position: absolute; }
+  .box-6 .line, .box-6 .box-7 .line1, .box-7 .box-6 .line1 {
+    background: #000;
+    height: 0.5952%;
+    width: 33.4375%;
+    top: 76.98%;
+    left: 66.875%;
+    position: absolute; }
+  .box-6 .cont {
+    height: auto;
+    height: "";
+    width: 56.25%;
+    top: 75.595%;
+    left: 40.3125%;
+    position: absolute; }
+    .box-6 .cont p {
+      font-size: 0.6rem; }
+
+.box-7 {
+  background: url("../images/bj.png"); }
+  .box-7 .pic61, .box-7 .bj1, .box-7 .bj3 {
+    height: 22.619%;
+    width: 25.81%;
+    top: 17.067%;
+    left: 3.75%;
+    position: absolute; }
+  .box-7 .bj1, .box-7 .bj3 {
+    height: 38.678%;
+    width: 68.125%;
+    top: 6.9456%;
+    left: 53.191%;
+    position: absolute;
+    z-index: 1;
+    animation: rotate2d 10s 0.5s infinite both; }
+  .box-7 .bj3 {
+    height: "";
+    width: "";
+    top: 8.333%;
+    left: 53.1898%;
+    position: absolute;
+    z-index: 0; }
+  .box-7 .bj2, .box-7 .bj9, .box-7 .pic62, .box-7 .pic63 {
+    height: 10.64%;
+    width: 22.5%;
+    top: 20.63%;
+    left: 76.25%;
+    position: absolute; }
+  .box-7 .bj9 {
+    height: 8.13%;
+    width: 23.75%;
+    top: 8.93%;
+    left: 29.43%;
+    position: absolute; }
+  .box-7 .pic62 {
+    height: 13.53%;
+    width: 33.125%;
+    top: 74.007%;
+    left: 19.75%;
+    position: absolute; }
+  .box-7 .line, .box-7 .line1 {
+    height: 0.595%;
+    width: 30%;
+    top: 43.849%;
+    left: -0.3125%;
+    position: absolute;
+    background: #000; }
+  .box-7 .line1 {
+    height: 0.595%;
+    width: 17.81%;
+    top: 56.15%;
+    left: 85.3125%;
+    position: absolute; }
+  .box-7 .p1, .box-7 .p2, .box-7 .p3, .box-7 .p4 {
+    height: auto;
+    height: "";
+    width: 56.25%;
+    top: 9.92%;
+    left: 35.625%;
+    position: absolute; }
+    .box-7 .p1 p, .box-7 .p2 p, .box-7 .p3 p, .box-7 .p4 p {
+      font-size: 0.6rem; }
+  .box-7 .p2 {
+    height: "";
+    width: 56.25%;
+    top: 41.46%;
+    left: 30%;
+    position: absolute; }
+    .box-7 .p2 p {
+      font-size: 0.8rem; }
+  .box-7 .p3 {
+    height: "";
+    width: 70.625%;
+    top: 51.785%;
+    left: 16.875%;
+    position: absolute; }
+    .box-7 .p3 p {
+      font-size: 1.0rem; }
+  .box-7 .p4 {
+    height: "";
+    width: 56.25%;
+    top: 67.46%;
+    left: 45%;
+    position: absolute; }
+    .box-7 .p4 p {
+      font-size: 0.6rem; }
+  .box-7 .pic63 {
+    height: 22.81%;
+    width: 32%;
+    top: 66.26%;
+    left: 58.812%;
+    position: absolute; }
+@keyframes rotate2d {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.box-8 {
+  background: url("../images/bj.png"); }
+  .box-8 .bj, .box-8 .bj1, .box-8 .box-7 .bj3, .box-7 .box-8 .bj3, .box-8 .pic71, .box-8 .pic72, .box-8 .pic74, .box-8 .pic73, .box-8 .pic75 {
+    height: 17.375%;
+    width: 115.9%;
+    top: 89.48%;
+    left: -6.93%;
+    position: absolute; }
+  .box-8 .bj1, .box-8 .box-7 .bj3, .box-7 .box-8 .bj3 {
+    height: 13.29%;
+    width: 28.437%;
+    top: 61.5%;
+    left: 45.93%;
+    position: absolute; }
+  .box-8 .pic71, .box-8 .pic72, .box-8 .pic74 {
+    height: 31.15%;
+    width: 39.24%;
+    top: 2.18%;
+    left: 6.62%;
+    position: absolute; }
+  .box-8 .pic72 {
+    height: "";
+    width: "";
+    top: 1.59%;
+    left: 46.87%;
+    position: absolute; }
+  .box-8 .pic73 {
+    height: 26.29%;
+    width: 58.125%;
+    top: 34.91%;
+    left: 1.56%;
+    position: absolute; }
+  .box-8 .pic74 {
+    height: "";
+    width: "";
+    top: 31.13%;
+    left: 60.49%;
+    position: absolute; }
+  .box-8 .pic75 {
+    height: 21.62%;
+    width: 20.83%;
+    top: 69.24%;
+    left: 25.93%;
+    position: absolute; }
+  .box-8 .cont {
+    height: auto;
+    height: "";
+    width: 35.93%;
+    top: 62.436%;
+    left: 46.875%;
+    position: absolute; }
+    .box-8 .cont p {
+      font-size: 0.5rem; }
+
+.box-9 {
+  background: url("../images/bj.png"); }
+  .box-9 .pic81, .box-9 .pic82, .box-9 .pic83, .box-9 .pic84, .box-9 .pic85, .box-9 .bj, .box-9 .box-8 .bj1, .box-8 .box-9 .bj1, .box-9 .box-8 .box-7 .bj3, .box-8 .box-7 .box-9 .bj3, .box-9 .box-7 .box-8 .bj3, .box-7 .box-8 .box-9 .bj3, .box-9 .box-8 .pic71, .box-8 .box-9 .pic71, .box-9 .box-8 .pic72, .box-8 .box-9 .pic72, .box-9 .box-8 .pic74, .box-8 .box-9 .pic74, .box-9 .box-8 .pic73, .box-8 .box-9 .pic73, .box-9 .box-8 .pic75, .box-8 .box-9 .pic75, .box-9 .flower {
+    height: 22.81%;
+    width: 50%;
+    top: 2.182%;
+    left: 46.25%;
+    position: absolute;
+    z-index: 4; }
+  .box-9 .pic82 {
+    height: "";
+    width: "";
+    top: 14.08%;
+    left: 3.43%;
+    position: absolute;
+    z-index: 3; }
+  .box-9 .pic83 {
+    height: "";
+    width: "";
+    top: 29.761%;
+    left: 46.25%;
+    position: absolute;
+    z-index: 2; }
+  .box-9 .pic84 {
+    height: "";
+    width: "";
+    top: 41.79%;
+    left: 3.437%;
+    position: absolute;
+    z-index: 1; }
+  .box-9 .pic85 {
+    height: 20.23%;
+    width: 24.4375%;
+    top: 72.02%;
+    left: 7.55%;
+    position: absolute; }
+  .box-9 .bj, .box-9 .box-8 .bj1, .box-8 .box-9 .bj1, .box-9 .box-8 .box-7 .bj3, .box-8 .box-7 .box-9 .bj3, .box-9 .box-7 .box-8 .bj3, .box-7 .box-8 .box-9 .bj3, .box-9 .box-8 .pic71, .box-8 .box-9 .pic71, .box-9 .box-8 .pic72, .box-8 .box-9 .pic72, .box-9 .box-8 .pic74, .box-8 .box-9 .pic74, .box-9 .box-8 .pic73, .box-8 .box-9 .pic73, .box-9 .box-8 .pic75, .box-8 .box-9 .pic75 {
+    height: 16.6%;
+    width: 108.74%;
+    top: 89.894%;
+    left: -4.06%;
+    position: absolute; }
+  .box-9 .flower {
+    height: 6.79%;
+    width: 14.6875%;
+    top: 57.27%;
+    left: 72.125%;
+    position: absolute;
+    animation: fadeInRight 1s 0.5s infinite both; }
+  .box-9 .line, .box-9 .box-7 .line1, .box-7 .box-9 .line1 {
+    background: #000;
+    height: 0.595%;
+    width: 25.31%;
+    top: 78.57%;
+    left: 74.6%;
+    position: absolute; }
+  .box-9 .cont1, .box-9 .cont2 {
+    height: auto;
+    height: "";
+    width: 60.25%;
+    top: 72.61%;
+    left: 36.875%;
+    position: absolute; }
+    .box-9 .cont1 p, .box-9 .cont2 p {
+      font-size: 0.6rem; }
+  .box-9 .cont2 {
+    height: "";
+    width: 56.25%;
+    top: 77.18%;
+    left: 41.25%;
+    position: absolute; }
+
+.box-10 {
+  background: url("../images/bj.png"); }
+  .box-10 .pic91, .box-10 .pic92, .box-10 .pic93, .box-10 .bj, .box-10 .box-8 .bj1, .box-8 .box-10 .bj1, .box-10 .box-8 .box-7 .bj3, .box-8 .box-7 .box-10 .bj3, .box-10 .box-7 .box-8 .bj3, .box-7 .box-8 .box-10 .bj3, .box-10 .box-8 .pic71, .box-8 .box-10 .pic71, .box-10 .box-8 .pic72, .box-8 .box-10 .pic72, .box-10 .box-8 .pic74, .box-8 .box-10 .pic74, .box-10 .box-8 .pic73, .box-8 .box-10 .pic73, .box-10 .box-8 .pic75, .box-8 .box-10 .pic75, .box-10 .pic94 {
+    height: 40.07%;
+    width: 54.93%;
+    top: -0.39%;
+    left: 45.06%;
+    position: absolute; }
+  .box-10 .pic92, .box-10 .pic93 {
+    height: 5.952%;
+    width: 9.375%;
+    top: 61.7%;
+    left: 11.375%;
+    position: absolute;
+    animation: fadeInRight 1s 1.3s infinite both; }
+  .box-10 .pic93 {
+    height: "";
+    width: "";
+    top: 61.7%;
+    left: 80.507%;
+    position: absolute;
+    animation: fadeInLeft 1s 1.3s infinite both; }
+  .box-10 .bj, .box-10 .box-8 .bj1, .box-8 .box-10 .bj1, .box-10 .box-8 .box-7 .bj3, .box-8 .box-7 .box-10 .bj3, .box-10 .box-7 .box-8 .bj3, .box-7 .box-8 .box-10 .bj3, .box-10 .box-8 .pic71, .box-8 .box-10 .pic71, .box-10 .box-8 .pic72, .box-8 .box-10 .pic72, .box-10 .box-8 .pic74, .box-8 .box-10 .pic74, .box-10 .box-8 .pic73, .box-8 .box-10 .pic73, .box-10 .box-8 .pic75, .box-8 .box-10 .pic75 {
+    height: 26.58%;
+    width: 106.87%;
+    top: 73.6%;
+    left: -3.43%;
+    position: absolute; }
+  .box-10 .pic94 {
+    height: 16.563%;
+    width: 35%;
+    top: 42.06%;
+    left: 34.68%;
+    position: absolute; }
+  .box-10 .box {
+    height: 9.57%;
+    width: 41.875%;
+    top: 60.26%;
+    left: 30%;
+    position: absolute;
+    border: 0.01563rem solid #000;
+    border-radius: 0.03125rem;
+    font-size: 1.0rem;
+    line-height: 160%;
+    text-align: center; }
+
+.box-1 {
+  background-color: #ff369b; }
+
+.box-2 {
+  background-color: #ff0381; }
+
+.box-3 {
+  background-color: #cf0068; }
+
+.box-4 {
+  background-color: #9c004e; }
+
+.box-5 {
+  background-color: #690035; }
+
+.box-6 {
+  background-color: #36001b; }
+
+.box-7 {
+  background-color: #030002; }
+
+.box-8 {
+  background-color: black; }
+
+.box-9 {
+  background-color: black; }
+
+.box-10 {
+  background-color: black; }
+
+.music-c {
+  position: absolute;
+  background: url("../images/music.png") no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  right: 40px;
+  top: 40px;
+  z-index: 3;
+  animation: cir 1s linear infinite; }
+
+.music-c.active {
+  animation: null; }
+
+@keyframes cir {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.music-note {
+  position: absolute;
+  background: url("../images/music.gif") no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  right: 10px;
+  top: 10px;
+  z-index: 2; }
+
+.swiper-slide:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 24px;
+  height: 18px;
+  bottom: 20px;
+  background: url("../images/arrow.png") no-repeat;
+  background-size: contain;
+  animation: showUpDown 1s linear infinite; }
+
+.swiper-slide.noarrow:after {
+  background: url(""); }
+@keyframes showUpDown {
+  from {
+    bottom: 20px;
+    opacity: 1; }
+  to {
+    bottom: 35px;
+    opacity: 0; } }
+
+/*# sourceMappingURL=app.css.map */

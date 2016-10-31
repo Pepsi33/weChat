@@ -1,0 +1,683 @@
+$fontSize:64px;
+@function  px2Rem($px){
+  @return  $px/$fontSize +rem;
+}
+*{
+   padding: 0;
+   margin: 0;
+}
+@mixin shape($w,$h,$t,$l){
+    height:$h;
+    width:$w;
+    top:$t;
+    left: $l;
+  position: absolute;
+}
+
+%webpage {
+  width: 100%;
+  height: 100%;
+}
+%webimg{
+  width: 100%;
+  height:100%;
+}
+%webfont{
+  color: #000000;
+  border-width: 0;
+  border-color: transparent;
+  font-size: 0.8rem;
+  opacity: 1;
+  font-family: ºÚÌå;
+}
+html,body {
+  @extend  %webpage;
+}
+
+.swiper-container {
+  margin: 0 auto;
+  max-width: px2Rem(640px);
+  @extend  %webpage;
+}
+.load{
+  display: block;
+  width:100%;
+  height:100%;
+  background: #000;
+  text-align: center;
+  span{
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  img{
+    vertical-align: middle;
+  }
+}
+.swiper-slide {
+  background-size: cover;
+  @extend  %webpage;
+}
+.box-1{
+  background: url("../images/bj.png");
+.tran{
+  @include shape(93.75%,52.38095238095239%,12.103174603174603%,3.4375000000000004%);
+  z-index: 1;
+  animation: rotate2d 10s 0.5s infinite both;
+  img{
+    @extend  %webimg;
+  }
+}
+  .tran2{
+    z-index: 0;
+    @include shape("","",14.880952380952381%,7.5%);
+  }
+  .desc11{
+    height: auto;
+    @include shape(26.25%,"",74.20634920634922%,28.125%);
+    z-index: 0;
+    @extend %webfont;
+  }
+  .desc12{
+    @extend .desc11;
+    @include shape("","",80.75396825396825%,47.1875%);
+  }
+  .line11{
+    @include shape(45.3125%,0.5952380952380952%,77.57936507936508%,55.93749999999999%);
+    z-index: 0;
+    background-color: #000000;
+  }
+  .line12{
+    @extend .line11;
+    @include  shape("","",81.54761904761905%,0);
+  }
+  @keyframes rotate2d {
+    from {
+      transform:rotate(0deg)
+    }
+    to {
+      transform:rotate(360deg)
+    }
+  }
+  .pic1{
+    @include shape(31.5625%,14.837301587301589%,29.805555555555564%,35%);
+    z-index: 0;
+    img{
+      @extend %webimg;
+    }
+  }
+}
+.box-2{
+  background: url("../images/bj.png");
+  .bj22{
+    @include shape(40.38437499999999%,32.142857142857146%,60.11904761904761%,27.8125%);
+    img{
+      @extend %webimg;
+    }
+  }
+  .p21{
+    @extend %webfont;
+    height: auto;
+    @include shape(56.25%,"",6.547619047619048%,25%);
+  }
+  .p22{
+    @extend .p21;
+    @include shape("","",15.079365079365079%,50.31250000000001%);
+  }
+  .p23{
+    @extend .p21;
+    @include shape("","",21.825396825396826%,21.875%);
+  }
+  .p24{
+    @extend .p21;
+    @include shape("","",31.547619047619047%,44.375%);
+  }
+  .p25{
+    @extend .p21;
+    @include shape("","",41.269841269841265%,22.1875%);
+  }
+  .pic22{
+    @include shape(24.6875%,15.476190476190476%,50.39682539682539%,56.25%);
+    animation: flash 5s 0.5s infinite both;
+    img{
+      @extend %webimg;
+    }
+  }
+  .bj24{
+    @include shape(108.43750000000001%,16.25%,91.07142857142857%,-4.6875%);
+    z-index: 1;
+    img{
+      @extend %webimg;
+    }
+  }
+}
+.box-3 {
+  background: url("../images/bj.png");
+  .bj34 {
+    @include shape(108.43750000000001%,16.25%,91.07142857142857%,-4.6875%);
+    z-index: 1;
+    img {
+      @extend %webimg;
+    }
+  }
+    .bj35 {
+      @include shape(97.1875%,30.367063492063494%,2.7777777777777777%,1.25%);
+      img {
+        @extend %webimg;
+      }
+    }
+    .bj36 {
+      @include shape(21.412499999999998%,34.72222222222222%,3.7698412698412698%,15.312500000000002%);
+      img {
+        @extend %webimg;
+      }
+    }
+    .bj37 {
+      @include shape(112.1875%,14.285714285714285%,-0.5952380952380952%,-5.9375%);
+      img {
+        @extend %webimg;
+      }
+    }
+    .bj38 {
+      @include shape(26.006249999999998%,21.23015873015873%,67.65873015873017%,30.753124999999994%);
+      img {
+        @extend %webimg;
+      }
+    }
+    .bj39 {
+      @include shape(31.5625%,10.77579365079365%,61.06547619047619%,51.87500000000001%);
+      img {
+        @extend %webimg;
+      }
+    }
+    .bj310 {
+      @include shape(20.3125%,4.974206349206349%,62.496031746031754%,58.740625000000016%);
+      img {
+        @extend %webimg;
+      }
+    }
+  .cont31{
+    @extend .bj310;
+    @include shape(99.0625%,"",43.84920634920635%,18.125%);
+    color: #000000;
+    font-size: 0.8rem;
+    opacity: 1;
+    font-family: ºÚÌå;
+    line-height: 0.9rem;
+  }
+  .cont32{
+    @extend .cont31;
+    @include shape("","", 52.38095238095239%,24.125%);
+  }
+  }
+.box-4{
+  background: url("../images/bj.png");
+  .pic31{
+    @include shape(66.25%,24.994047619047617%,3.935785202752975%,6.679624938964893%);
+    img{
+      @extend %webimg;
+    }
+  }
+  .pic32{
+    @include shape(68.125%,38.67857142857143%,-10.8015873015873%,71.937174987793%);
+    z-index: 1;
+    animation: rotate2d 10s 0.5s infinite both;
+    img{
+      @extend %webimg;
+    }
+  }
+  .pic{
+    @extend .pic32;
+    @include shape("","",-9.099082341269842%,69.12780303955095%);
+    z-index: 0;
+  }
+  .pic33{
+    @include shape(72.1875%,27.642857142857142%,29.534576658218626%,27.607168579101575%);
+    img{
+      @extend %webimg;
+    }
+  }
+  .pic34{
+    @include shape(28.4375%,23.61111111111111%,49.86912972586495%,-3.75%);
+    transform: rotate(32deg);
+    img{
+      @extend %webimg;
+    }
+  }
+  .pic35{
+    @include shape(81.5625%,31.839285714285715%,67.48724341014075%,8.86771087646487%);
+    img{
+      @extend %webimg;
+    }
+  }
+  .line{
+    background:#000;
+    @include shape(38.4375%,0.5952380952380952%,63.5654761904762%,62.18749999999999%);
+  }
+  .cont{
+    height: auto;
+    @include shape(56.25%,"",58.163054451109865%,26.608738708496183%);
+    @extend %webfont;
+    font-size: -1.1rem;
+    p{
+      font-size: 0.6rem;
+    }
+  }
+  @keyframes rotate2d {
+    from {
+      transform: rotate(0deg)
+    }
+    to {
+      transform: rotate(360deg)
+    }
+  }
+}
+.box-5{
+  background: url("../images/bj.png");
+  .pic41{
+    @include shape(44.6875%,20.21031746031746%,8.73015873015873%,27.500000000000004%);
+    img{
+      @extend %webimg;
+    }
+  }
+  .pic42{
+    @extend .pic41;
+    @include shape("","",31.150793650793652%,4.6875%);
+  }
+  .pic43{
+    @extend .pic41;
+    @include shape("","",31.150793650793652%,51.24999999999999%);
+  }
+  .pic44{
+    @extend .pic41;
+    @include shape(32.084375%,22.023809523809522%,67.06349206349206%,8.4375%);
+  }
+  .pic45{
+    @extend .pic41;
+    @include shape(8.75%,4.06547619047619%,73.59008449978298%,51.27636489868163%);
+    transform: rotate(74deg);
+    img{
+      @extend %webimg;
+      transform: rotate(74deg);
+    }
+    animation: fadeInRight 1s 0.8s infinite both;
+  }
+  .pic46{
+    @extend .pic45;
+    @include shape(12.5%,5.771825396825396%,69.62499999999999%,67.8125%);
+    img {
+      transform: rotate(0deg);
+    }
+    animation: fadeInRight 1s 0.5s infinite both;
+  }
+  .pic47{
+    @extend .pic45;
+    @include shape(15.3%,7.11%,14.91%,79.98%);
+    animation: fadeInUp 1s 0.5s infinite both;
+    img {
+      transform: rotate(316deg);
+    }
+  }
+  .bj41{
+    @extend .pic41;
+    @include shape(110.3%,16.53%,86.90%,-5%);
+  }
+  .line41{
+    background: #000;
+    @include shape(30.93%,0.5952%,59.325%,68.75%);
+  }
+  .cont41{
+    @include shape(56.25%,"",58.134%,33.75%);
+    p{
+      @extend %webfont;
+      font-size: 0.6rem;
+    }
+  }
+}
+.box-6{
+  background: url("../images/bj.png");
+  .pic51{
+    @include shape(42.8125%,19.41%,4.56%, 3.437%);
+    img{
+      @extend %webimg;
+    }
+  }
+  .pic52{
+    @extend .pic51;
+    @include shape("","",4.563%, 50.93%);
+  }
+  .pic53{
+    @extend .pic51;
+    @include shape("","",25.595%, 3.125%);
+  }
+  .pic54{
+    @extend .pic51;
+    @include shape("","",25.396%,49.6875%);
+  }
+  .pic55{
+    @extend .pic51;
+    @include shape("","",48.61%,3.437%);
+  }
+  .pic56{
+    @extend .pic51;
+    @include shape("","",48.412%,50.62%);
+  }
+  .pic57{
+    @extend .pic51;
+    @include shape(31.6%,22.81%,70.83%,3.125%);
+  }
+  .pic58{
+    @extend .pic51;
+    @include shape(110.31%,16.53%,91.26%,-4.375%);
+  }
+  .line{
+    background: #000;
+    @include shape(33.4375%,0.5952%,76.98%,66.875%);
+  }
+  .cont{
+    height: auto;
+    @include shape(56.25%,"",75.595%,40.3125%);
+    p{
+      @extend %webfont;
+      font-size: 0.6rem;
+    }
+  }
+}
+.box-7{
+  background: url("../images/bj.png");
+  .pic61{
+    @include shape(25.81%,22.619%,17.067%,3.75%);
+    img{
+      @extend %webimg;
+    }
+  }
+  .bj1{
+    @extend .pic61;
+    @include shape(68.125%,38.678%,6.9456%,53.191%);
+    z-index: 1;
+    animation: rotate2d 10s 0.5s infinite both;
+  }
+  .bj3{
+    @extend .bj1;
+    @include shape("","",8.333%,53.1898%);
+    z-index: 0;
+  }
+  .bj2{
+    @include shape(22.5%,10.64%,20.63%,76.25%);
+    img{
+      @extend %webimg;
+    }
+  }
+  .bj9{
+    @extend .bj2;
+    @include shape(23.75%,8.130%,8.93%,29.43%);
+  }
+  .pic62{
+    @extend .bj2;
+    @include shape(33.125%,13.53%,74.007%,19.75%);
+  }
+  .line{
+    @include shape(30%,0.595%,43.849%,-0.3125%);
+    background: #000;
+  }
+  .line1{
+    @extend .line;
+    @include shape(17.81%,0.595%,56.150%,85.3125%);
+  }
+  .p1{
+    height: auto;
+    @include shape(56.25%,"",9.920%,35.625%);
+    @extend %webfont;
+    p{
+      font-size: 0.6rem;
+    }
+  }
+  .p2{
+    @extend .p1;
+    @include shape(56.25%,"",41.460%,30%);
+    p{
+      font-size: 0.8rem;
+    }
+  }
+  .p3{
+    @extend .p1;
+    @include shape(70.625%,"",51.785%,16.875%);
+    p{
+      font-size: 1.0rem;
+    }
+  }
+  .p4{
+    @extend .p1;
+    @include shape(56.25%,"",67.460%,45%);
+    p{
+      font-size: 0.6rem;
+    }
+  }
+  .pic63{
+    @extend .bj2;
+    @include shape(32.00%,22.81%,66.26%,58.812%);
+  }
+  @keyframes rotate2d {
+    from{
+      transform: rotate(0deg);
+    }to{
+      transform: rotate(360deg);
+         }
+  }
+}
+.box-8{
+  background: url("../images/bj.png");
+  .bj {
+    @include shape(115.9%,17.375%,89.48%,-6.93%);
+    img {
+      @extend %webimg;
+    }
+  }
+  .bj1{
+    @extend .bj;
+    @include shape(28.437%,13.29%,61.50%,45.93%);
+  }
+    .pic71{
+      @extend .bj;
+      @include shape(39.24%,31.150%,2.18%,6.62%);
+    }
+    .pic72{
+      @extend .pic71;
+      @include shape("","",1.59%,46.87%);
+    }
+    .pic73{
+      @extend .bj;
+      @include shape(58.125%,26.29%,34.91%,1.56%);
+    }
+    .pic74{
+      @extend .pic71;
+      @include shape("","",31.13%,60.49%);
+    }
+    .pic75{
+      @extend .bj;
+      @include shape(20.83%,21.62%,69.24%,25.93%);
+    }
+  .cont{
+    height: auto;
+    @include shape(35.93%,"",62.436%,46.875%);
+    @extend %webfont;
+    p{
+      font-size: 0.5rem;
+    }
+  }
+}
+.box-9{
+  background: url("../images/bj.png");
+  .pic81{
+    @include shape(50%,22.81%,2.182%,46.25%);
+    z-index: 4;
+    img{
+      @extend %webimg;
+    }
+  }
+  .pic82{
+    @extend .pic81;
+    @include shape("","",14.08%,3.43%);
+    z-index: 3;
+  }
+  .pic83{
+    @extend .pic81;
+    @include shape("","",29.761%,46.25%);
+    z-index: 2;
+  }
+  .pic84{
+    @extend .pic81;
+    @include shape("","",41.79%,3.437%);
+    z-index: 1;
+  }
+  .pic85{
+    @extend .pic81;
+    @include shape(24.4375%,20.23%,72.02%,7.55%);
+  }
+  .bj{
+    @extend .pic81;
+    @include shape(108.74%,16.60%,89.894%,-4.06%);
+  }
+  .flower{
+    @extend .pic81;
+    @include shape(14.6875%,6.79%,57.27%,72.125%);
+    animation: fadeInRight 1s 0.5s infinite both;
+  }
+  .line{
+    background: #000;
+    @include shape(25.31%, 0.595%,78.57%,74.6%);
+  }
+  .cont1{
+    height: auto;
+    @include shape(60.25%,"",72.61%,36.875%);
+    @extend %webfont;
+    p{
+      font-size: 0.6rem;
+    }
+  }
+  .cont2{
+    @extend .cont1;
+    @include shape(56.25%,"",77.18%,41.25%);
+  }
+}
+.box-10{
+  background: url("../images/bj.png");
+  .pic91{
+    @include shape(54.93%,40.07%,-0.39%,45.06%);
+    img{
+      @extend %webimg;
+    }
+  }
+  .pic92{
+    @extend .pic91;
+    @include shape(9.375%,5.952%,61.70%,11.375%);
+    animation: fadeInRight 1s 1.3s infinite both;
+  }
+  .pic93{
+    @extend .pic92;
+    @include shape("","",61.7%,80.507%);
+    animation: fadeInLeft 1s 1.3s infinite both;
+  }
+  .bj{
+    @extend .pic91;
+    @include shape(106.87%,26.58%,73.6%,-3.43%);
+  }
+  .pic94{
+    @extend .pic91;
+    @include shape( 35%,16.563%,42.06%,34.68%);
+  }
+  .box{
+    @include shape(41.875%,9.57%,60.26%, 30%);
+    border: px2Rem(1px) solid #000;
+    border-radius: px2Rem(2px);
+    @extend %webfont;
+      font-size: 1.0rem;
+    line-height: 160%;
+      text-align: center;
+  }
+}
+  @for $i from 1 through 10 {
+    .box-#{$i} {
+      background-color: darken(hotpink, 10%*$i);
+    }
+  }
+
+  .box-1 p:nth-of-type(1) {
+    @extend %webpage;
+
+  }
+
+  .box-1 p:nth-of-type(2) {
+
+  }
+
+  .music-c {
+    position: absolute;
+    background: url("../images/music.png") no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    right: 40px;
+    top: 40px;
+    z-index: 3;
+    animation: cir 1s linear infinite;
+  }
+  .music-c.active {
+    animation: null;
+  }
+
+  @keyframes cir {
+    from {
+      transform: rotate(0deg)
+    }
+    to {
+      transform: rotate(360deg)
+    }
+  }
+  .music-note {
+    position: absolute;
+    background: url("../images/music.gif") no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+  }
+
+  .swiper-slide {
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 24px;
+      height: 18px;
+      bottom: 20px;
+      background: url("../images/arrow.png") no-repeat;
+      background-size: contain;
+      animation: showUpDown 1s linear infinite;
+    }
+  }
+  .swiper-slide.noarrow {
+    &:after {
+      background: url("");
+    }
+
+    @keyframes showUpDown {
+      from {
+        bottom: 20px;
+        opacity: 1;
+      }
+
+      to {
+        bottom: 35px;
+        opacity: 0;
+      }
+    }
+  }
+
+
+
